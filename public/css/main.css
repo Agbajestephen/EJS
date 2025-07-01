@@ -13,3 +13,14 @@ header, footer{
     background-color: ghostwhite;
     padding: 20px ;
 }
+
+main{
+     background-color: aqua;
+     padding: 20px;
+}
+
+.layout-sidebar {
+     display: grid;
+     gap: 10px;
+     grid-template-columns: 2fr 1fr;
+}

@@ -3,7 +3,7 @@ const express = require('express')
 const expresslayouts = require('express-ejs-layouts')
 
 const app = express()
-const port = 3300
+const port = 3000
 
 // static files
 app.use(express.static('public'))
@@ -18,11 +18,11 @@ app.set('view engine', 'ejs')
 
 //Nagivation
 app.get('', (req, res) =>{
-    res.render('index')
+    res.render('index', { title: 'Home Page'})
 })
 
-app.get('/abouts', (req, res) =>{
-    res.render('about')
+app.get('/about', (req, res) =>{
+    res.render('about', { title: 'About Page', layout: './layout/sidebar'})
 })
 
 //listen on port 3306
