@@ -13,6 +13,7 @@ app.use('/css', express.static(__dirname + 'public/css'))
 
 //set templating engine 
 app.use(expresslayouts)
+app.set('layout', './layout/full-width')
 app.set('view engine', 'ejs')
 
 //Nagivation
