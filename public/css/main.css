@@ -1,0 +1,15 @@
+body{
+    background-color: #eee;
+    font-size: 26px ;
+}
+.wrapper{
+    width: 760px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+header, footer{
+    background-color: ghostwhite;
+    padding: 20px ;
+}
